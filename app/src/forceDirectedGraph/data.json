@@ -1,0 +1,142 @@
+{
+    "data": {
+        "caseName": "曾令电瓶车被盗案",
+        "suspects": [{
+            "name": "张三",
+            "evidences": [{
+                "evidenceName": "讯问笔录",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "金融城地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "2017年12月2日上午8点左右"
+                }, {
+                    "elementName": "特征",
+                    "elementValue": "吸毒史"
+                }]
+            }, {
+                "evidenceName": "讯问笔录二",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "孵化园地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "2017年12月2日上午11点左右"
+                }]
+            }, {
+                "evidenceName": "询问笔录二",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "孵化园地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "记不清了"
+                }]
+            }]
+        }, {
+            "name": "李四",
+            "evidences": [{
+                "evidenceName": "讯问笔录",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "金融城地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "2017年12月2日上午8点左右"
+                }, {
+                    "elementName": "特征",
+                    "elementValue": "吸毒史"
+                }]
+            }, {
+                "evidenceName": "讯问笔录二",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "孵化园地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "2017年12月2日上午11点左右"
+                }]
+            }, {
+                "evidenceName": "询问笔录二",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "孵化园地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "记不清了"
+                }]
+            }]
+        }, {
+            "name": "王二麻子",
+            "evidences": [{
+                "evidenceName": "讯问笔录",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "金融城地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "2017年12月2日上午8点左右"
+                }, {
+                    "elementName": "特征",
+                    "elementValue": "吸毒史"
+                }]
+            }, {
+                "evidenceName": "讯问笔录二",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "孵化园地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "2017年12月2日上午11点左右"
+                }]
+            }, {
+                "evidenceName": "询问笔录二",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "孵化园地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "记不清了"
+                }]
+            }]
+        }],
+        "witnesses": [{
+            "name": "目击者",
+            "evidences": [{
+                "evidenceName": "讯问笔录",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "金融城地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "2017年12月2日上午8点左右"
+                }, {
+                    "elementName": "特征",
+                    "elementValue": "吸毒史"
+                }]
+            }]
+        }, {
+            "name": "证人",
+            "evidences": [{
+                "evidenceName": "讯问笔录二",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "孵化园地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "2017年12月2日上午11点左右"
+                }]
+            }, {
+                "evidenceName": "询问笔录二",
+                "elements": [{
+                    "elementName": "地点",
+                    "elementValue": "孵化园地铁站"
+                }, {
+                    "elementName": "时间",
+                    "elementValue": "记不清了"
+                }]
+            }]
+        }]
+    }
+}

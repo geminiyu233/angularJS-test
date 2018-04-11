@@ -1,0 +1,44 @@
+<div class="container">
+    <input type="text" class="form-control" ng-model="search.id" placeholder="输入搜索内容">
+    <table class="table" ng-controller="cartCtrl">
+        <thead>
+        <tr>
+            <th ng-class="{dropup:orderType}" ng-click="changeOrder('id')">编号<span class="caret"></span></th>
+            <th>产品名字</th>
+            <th ng-class="{dropup:orderType}" ng-click="changeOrder('quantity')">购买数量<span class="caret"></span></th>
+            <th ng-class="{dropup:orderType}" ng-click="changeOrder('price')">产品单价<span class="caret"></span></th>
+            <th>产品总价</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- 或者ng-repeat="item in cartData | filter:search"-->
+        <!--所有id属性 filter:{id:search}-->
+        <tr ng-repeat="item in cartData | filter:search |orderBy:order:orderType">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>
+                <button type="button" class="btn btn-primary" ng-click="reduce(item.id)"> -</button>
+                <input type="text" value="{{item.quantity}}" ng-model="item.quantity">
+                <button type="button" class="btn btn-primary" ng-click="add(item.id)"> +</button>
+            </td>
+            <td>{{item.price|currency:'￥'}}</td>
+            <td>{{item.quantity * item.price|currency:'￥'}}</td>
+            <td>
+                <button type="button" class="btn btn-danger" ng-click="remove(item.id)">移除</button>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>总购买价</td>
+            <td>{{allPrice()}}</td>
+            <td>总购买数量</td>
+            <td>{{allQuantity()}}</td>
+            <td>
+                <button type="button" class="btn btn-danger" ng-click="removeAll()">清空购物车</button>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</div>

@@ -1,0 +1,41 @@
+<!--ng内置的过滤器-->
+<div ng-controller="helloFilterCtrl">
+    <!--number 得到123，456-->
+    <p>{{123456 | number}}</p>
+    <!--带参数 保留几位小数123,456.000-->
+    <p>{{123456 | number:3}}</p>
+
+    <!--货币currency $123,456.00-->
+    <p>{{123456|currency}}</p>
+    <!--货币currency ￥123,456.00（参数：跟的格式样式，必须是单引号）-->
+    <p>{{123456|currency:'￥'}}</p>
+
+    <!--大小写转换-->
+    <P>{{"ABC" | lowercase}}</P>
+    <p>{{"abc" | uppercase}}</p>
+
+    <!--限制字符串或数组的长度,参数：字符长度acv,[1,2,3]-->
+    <p>{{"acvds" | limitTo:3}}</p>
+    <P>{{[1,2,3,4,5,6] | limitTo:3}}</P>
+
+    <!--参数很多，用时查  Dec 11, 2017-->
+    <p>{{ today | date}}</p>
+    <P>{{ today | date:'yyyy-mm-dd'}}</P>
+
+    <!--普通数组排序  默认是升序,降序排列是orderBy:order:true-->
+    <P>{{ [1,2,9,2] | orderBy }}</P> <!--1,2,2,9-->
+    <p>{{ [4,3,2,1] | orderBy:order:true}}</p> <!--1,2,3,4-->
+
+    <!--数组中有对象的排序（按照对象的某个属性去排序）或者其他的属性来排序都行-->
+    <!--[{"id":1,"name":"ys"},{"id":2,"name":"wyx"},{"id":5,"name":"yj"}]-->
+    <P>{{ [{id:1,name:"ys"},{id:5,name:"yj"},{id:2,name:"wyx"}] | orderBy:'id' }}</P>
+    <!--[{"id":5,"name":"yj"},{"id":2,"name":"wyx"},{"id":1,"name":"ys"}]-->
+    <P>{{ [{id:1,name:"ys"},{id:5,name:"yj"},{id:2,name:"wyx"}] | orderBy:'id':true }}</P>
+    <!--自定义的filter-->
+    <ul ng-repeat="item in data | filterCity">
+        <li>{{item.id}}</li>
+        <li>{{item.name}}</li>
+        <li>{{item.city}}</li>
+    </ul>
+</div>
+

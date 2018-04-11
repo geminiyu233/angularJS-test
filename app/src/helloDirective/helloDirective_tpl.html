@@ -1,0 +1,14 @@
+<div class='container'>
+    <!-- total-items 所有页面中的项目总数。 -->
+    <!-- boundary-link-numbers 被省略号替换。 -->
+    <!-- items-per-page（默认值：10）-每页的最大项目数目。小于1的值表示一个页面上的所有项目。 -->
+    <!-- max-size（默认值：null）-为分页大小数限制。 -->
+    <!-- ng-change 这个可以用来在页面改变的时候调用一个函数。 -->
+    <!-- ng-model - 当前页码。第一页是1。 -->
+    <ul uib-pagination total-items="totalItems" items-per-page="pageCounts" ng-model="currentPage" ng-change='_pageChange()' max-size="6" class="pagination" boundary-link-numbers="true" previous-text="<" next-text=">"></ul>
+    <br>
+    <span>转到第</span>
+    <input type="text" ng-model="_currentPage">
+    <span>页</span>
+    <button class="btn" ng-click="jumpToPage()">跳页</button>
+</div>

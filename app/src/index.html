@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a ui-sref="hello" class="navbar-brand">首页</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a ui-sref="cart">数据双向绑定</a>
+                </li>
+                <li>
+                    <a ui-sref="helloFilter">自定义过滤器练习</a>
+                </li>
+                <li>
+                    <a ui-sref="serviceTry">自定义服务练习</a>
+                </li>
+                <li>
+                    <a ui-sref="helloDirective">自定义指令练习</a>
+                </li>
+                <li>
+                    <a ui-sref="form">表单验证练习</a>
+                </li>
+                <li>
+                    <a ui-sref="dirtyCheck">脏检查</a>
+                </li>
+                <!-- <li>
+                    <a ui-sref="helloHttp">$http练习</a>
+                </li> -->
+                <li>
+                    <a ui-sref="helloResource">$resource练习</a>
+                </li>
+                <li>
+                    <a ui-sref="pictureTool">d3图片缩放</a>
+                </li>
+                <li>
+                    <a ui-sref="forceDirectedGraph">力导向图</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div ui-view></div>
+    <!-- bower:js -->
+    <script src='../bower_components/d3/d3.js'></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="//cdn.bootcss.com/angular-ui-bootstrap/1.2.5/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+    <!-- endbower -->
+    <script src="../dist/app.js"></script>
+    <script src="../src/helloDirective/helloDirectiveCtrl.js"></script>
+</body>
+</html>

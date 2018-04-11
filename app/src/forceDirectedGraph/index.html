@@ -1,0 +1,10 @@
+<div>
+    <div style="float:left">
+        <svg></svg>
+    </div>
+    <div style="float:left">
+            <ul>
+                <li ng-repeat="item in data" ng-class="{'bg-red':item.bgr}" ng-click="togglePoint()">{{item.desc}}</li>
+            </ul>
+    </div>
+</div>
